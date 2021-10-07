@@ -1,0 +1,46 @@
+#select-error-message{
+    color: red;
+    font-weight: 600;
+}
+
+#main{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "wlf wlf wlf"
+    "info info search"
+    "threeday threeday threeday"
+    "other other other";
+    grid-gap: 5px;
+    max-width: 800px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#main > *{
+   border: 1px solid black;
+}
+
+#header{
+   grid-area: header;
+}
+
+#weather-location-form{
+   grid-area: wlf;
+}
+
+#weather-info{
+   grid-area: info;
+}
+
+#previous-search{
+   grid-area: search;
+}
+
+#three-day-weather{
+   grid-area: threeday;
+}
+
+#other-info{
+   grid-area: other;
+}
