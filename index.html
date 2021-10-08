@@ -10,10 +10,10 @@
 </head>
 <body>
   <div id="main">
-      <div id="header">
+      <header id="title-main">
     <h1>Weather App</h1>
-      </div>
-
+      </header>
+  
     <form id="weather-location-form">
        <div id="select-error-message"></div>
         <label for="pick-location">Pick a location</label>
@@ -21,15 +21,17 @@
         <!-- <select id="pick-location" name="pick-location" type="text">
             <option value="default"></option>
         </select> -->
-        
         <input type="submit" value="Get Weather" />
     </form>
-    <div id="weather-info">Weather info</div>
-    <div id="previous-search">Previous search</div>
+  
+    <main class="display">
+      <h2>Weather info</h2>
+    </main>
+    <div class="history">Previous Searches</div>
     <div id="three-day-weather">Three day weather</div>
     <div id="other-info">Other info</div>
 
-   </div>
+  </div>
    <div id="current-weather-location"></div>
 </body>
 </html>

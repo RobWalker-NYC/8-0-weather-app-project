@@ -8,7 +8,7 @@
     grid-template-areas: 
     "header header header"
     "wlf wlf wlf"
-    "info info search"
+    "display display history"
     "threeday threeday threeday"
     "other other other";
     grid-gap: 5px;
@@ -19,9 +19,10 @@
 
 #main > *{
    border: 1px solid black;
+   padding: 10px 20px;
 }
 
-#header{
+#title-main{
    grid-area: header;
 }
 
@@ -29,12 +30,13 @@
    grid-area: wlf;
 }
 
-#weather-info{
-   grid-area: info;
+.display{
+   grid-area: display;
+
 }
 
-#previous-search{
-   grid-area: search;
+.history{
+   grid-area: history;
 }
 
 #three-day-weather{
