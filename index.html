@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <script defer scr="script.js"></script> 
+    <script defer src="script.js"></script> 
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -24,14 +24,75 @@
         <input type="submit" value="Get Weather" />
     </form>
   
-    <main class="display">
+    <main class="main-display">
       <h2>Weather info</h2>
-    </main>
-    <div class="history">Previous Searches</div>
-    <div id="three-day-weather">Three day weather</div>
-    <div id="other-info">Other info</div>
+      <!-- <img src="" alt="" /> -->
+      <div id="locations-header" ></div>
 
+       <div id="locations-content" >
+       <div id="locations-area">Area: Melbourne</div>
+       <div id="locations-region">Region: Victoria</div>
+       <div id="locations-country">Country: Australia</div>
+       <div id="locations-currently">Currently: Feels like 37°F</div>
+      </div>
+      <div id="locations-action" ></div>
+    </main>
+
+    <div class="history">
+      <h3>Previous Searches</h3>
+      <ul id="history-list"> 
+          <li>Melbourne - 37°F</li>
+      
+          <li>Seattle</li>
+          <li>Shanghai</li>
+          <li>Miami</li>
+          <li>Toronto</li>
+          <li>New York City</li>
+       
+      </ul>
+    </div class="display">
+    <div id="three-day-weather">
+      <div id="three-day-weather-list" >
+      <div> 
+        <div class="three-day-weather-list-items">
+      <div id="today">
+        <h3>Today</h3>
+         <div id="today-average-temp">Average Temperature: 55°F</div>
+         <div id="today-max-temp">Max Temperature: 60°F</div>
+         <div id="today-min-temp">Mix Temperature: 49°F</div>
+      </div>
+     </div>
+    </div>
+
+      <div>
+        <div class="three-day-weather-list-items"></div>
+        <div id="tomorrow">
+          <h3>Tomorrow</h3>
+           <div id="tomorrow-average-temp">Average Temperature: 55°F</div>
+           <div id="tomorrow-max-temp">Max Temperature: 60°F</div>
+           <div id="tomorrow-min-temp">mix Temperature: 49°F</div>
+        </div>
+      </div>
+    
+
+      <div>
+        <div class="three-day-weather-list-items">
+        <div id="tomorrow">
+         <h3>Day After Tomorrow</h3>
+           <div id="day-after-average-temp">Average Temperature: 55°F</div>
+           <div id="day-after-max-temp">Max Temperature: 60°F</div>
+           <div id="day-after-min-temp">mix Temperature: 49°F</div>
+       </div>
+       </div>
+      </div>
+
+    </div>
+   </div>
+   <!-- <div id="other-info" > -->
+   </div>
+    
+    
   </div>
-   <div id="current-weather-location"></div>
+   <!-- <div id="current-weather-location"></div> -->
 </body>
 </html>

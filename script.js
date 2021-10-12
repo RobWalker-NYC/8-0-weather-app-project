@@ -1,14 +1,40 @@
-fetch("wttr.in/?format=j1")
+
+let form = document.querySelector("form");
+
+
+function getWeather() {
+    let city = form["pick-location"].value
+    console.log(city);
+    fetch(`https://wttr.in/${city}?format=j1`)
     .then((res)=>{
         return res.json();
     }).then((data)=>{
-        let weatherList = data.results;
-        for(let weather of weatherList){
-            
-            console.log(weather.name);
-
-        }
-        console.log(weatherList);
+     console.log(data);
     }).catch((err)=>{
         console.log(err);
     });
+    console.log();
+};
+getWeather();
+
+// form.addEventListener("submit", (e) =>{
+//     // let currentCity = document.querySelector().textContent;
+//     e.preventDefault();
+//   getWeather();  
+  
+// });
+
+
+
+        // for(let weather of weatherList){
+            
+        //    let { city} = weather;
+        //     console.log(city);
+
+        // let form = document.querySElector("form");
+        // form.addEventListener("submit");
+        // e.preventDefault();
+        // console.log("Button Click");
+
+        // }
+        // console.log(weatherList);
