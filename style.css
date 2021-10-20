@@ -15,37 +15,57 @@
     max-width: 800px;
     width: 75%;
     margin: 0 auto;
+    
 }
 
 #main > *{
-   border: 1px solid black;
-   padding: 10px 20px;
-   
+    border: 1px solid cadetblue;
+   padding: 10px 20px; 
+     
 }
 
 #title-main{
+   background-color: cadetblue;
    grid-area: header;
    text-align: center;
+   border: 1px solid black;
+   font-family: sans-serif;
+   
 }
+h1{
+color: white;
+}
+
+label{
+   color: white;
+} 
 
 #weather-location-form{
    grid-area: wlf;
    text-align: center;
+   
 }
 
 
 
-.main-display{
+.display{
    grid-area: display;
    grid-gap: 5px;
    text-align: center;
-
+   
    }
 
-.main-display > *{
-   border: 1px solid black;
+.display > *{
+   border: 1px solid cadetblue;
    
 }
+
+.display{
+   background-color: lightgrey;
+  
+}
+
+
 
 .history{
    grid-area: history;

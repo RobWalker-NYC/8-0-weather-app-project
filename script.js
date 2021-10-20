@@ -1,20 +1,33 @@
 
+function cap(name) {
+  return name[0].toUpperCase() + name.slice(1);
+}
+
 let form = document.querySelector("form");
 
 
 function getWeather() {
-    let city = form["pick-location"].value
-    console.log(city);
+ let city = form["pick-location"].value
+//    console.log(city);
     fetch(`https://wttr.in/${city}?format=j1`)
     .then((res)=>{
         return res.json();
     }).then((data)=>{
-     console.log(data);
-    }).catch((err)=>{
+    //  console.log(data);
+
+    
+
+
+
+
+
+
+
+    })
+    .catch((err)=>{
         console.log(err);
     });
-    console.log();
-};
+}
 getWeather();
 
 // form.addEventListener("submit", (e) =>{

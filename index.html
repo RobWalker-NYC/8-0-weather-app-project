@@ -12,23 +12,24 @@
   <div id="main">
       <header id="title-main">
     <h1>Weather App</h1>
-      </header>
+      <!-- </header> -->
   
     <form id="weather-location-form">
        <div id="select-error-message"></div>
-        <label for="pick-location">Pick a location</label>
+        <label for="pick-location">Pick a Location</label>
         <input id="pick-location" name="pick-location" type="text" required />
         <!-- <select id="pick-location" name="pick-location" type="text">
             <option value="default"></option>
         </select> -->
         <input type="submit" value="Get Weather" />
     </form>
-  
-    <main class="main-display">
-      <h2>Weather info</h2>
+  </header>
+    <main class="display" >
+      <h2></h2>
       <!-- <img src="" alt="" /> -->
-      <div id="locations-header" ></div>
-
+      <div id="locationsHeader" >
+    <div>Choose a location to view the weather.</div>  
+    
        <div id="locations-content" >
        <div id="locations-area">Area: Melbourne</div>
        <div id="locations-region">Region: Victoria</div>
@@ -41,7 +42,7 @@
     <div class="history">
       <h3>Previous Searches</h3>
       <ul id="history-list"> 
-          <li>Melbourne - 37°F</li>
+          <li id="default">No previous searches.</li>
       
           <li>Seattle</li>
           <li>Shanghai</li>
@@ -70,7 +71,7 @@
           <h3>Tomorrow</h3>
            <div id="tomorrow-average-temp">Average Temperature: 55°F</div>
            <div id="tomorrow-max-temp">Max Temperature: 60°F</div>
-           <div id="tomorrow-min-temp">mix Temperature: 49°F</div>
+           <div id="tomorrow-min-temp">Mix Temperature: 49°F</div>
         </div>
       </div>
     
@@ -81,7 +82,7 @@
          <h3>Day After Tomorrow</h3>
            <div id="day-after-average-temp">Average Temperature: 55°F</div>
            <div id="day-after-max-temp">Max Temperature: 60°F</div>
-           <div id="day-after-min-temp">mix Temperature: 49°F</div>
+           <div id="day-after-min-temp">Mix Temperature: 49°F</div>
        </div>
        </div>
       </div>
